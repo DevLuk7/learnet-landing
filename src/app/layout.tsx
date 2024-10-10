@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,6 +26,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:title" content="Learnet" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://learnet.pl" />
+        <meta property="og:image" content="https://learnet.pl/icon.svg" />
+        <meta
+          property="og:description"
+          content="Popraw swoje umiejętności językowe dzięki naszej innowacyjnej platformie do nauki. Ćwicz gdziekolwiek i kiedykolwiek, całkowicie za darmo."
+        />
+        <meta property="og:site_name" content="Learnet" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
