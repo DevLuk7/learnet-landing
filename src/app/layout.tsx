@@ -27,15 +27,35 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:title" content="Learnet" />
-        <meta property="og:type" content="website" />
+        {/* <!-- HTML Meta Tags --> */}
+        <title>Learnet</title>
+        <meta
+          name="description"
+          content="Popraw swoje umiejętności językowe dzięki naszej innowacyjnej platformie do nauki. Ćwicz gdziekolwiek i kiedykolwiek, całkowicie za darmo."
+        />
+
+        {/* <!-- Facebook Meta Tags -- > */}
         <meta property="og:url" content="https://learnet.pl" />
-        <meta property="og:image" content="https://learnet.pl/icon.svg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Learnet" />
         <meta
           property="og:description"
           content="Popraw swoje umiejętności językowe dzięki naszej innowacyjnej platformie do nauki. Ćwicz gdziekolwiek i kiedykolwiek, całkowicie za darmo."
         />
-        <meta property="og:site_name" content="Learnet" />
+        <meta property="og:image" content="https://learnet.pl/og-image.png" />
+
+        {/* <!-- Twitter Meta Tags -- > */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="learnet.pl" />
+        <meta property="twitter:url" content="https://learnet.pl" />
+        <meta name="twitter:title" content="Learnet" />
+        <meta
+          name="twitter:description"
+          content="Popraw swoje umiejętności językowe dzięki naszej innowacyjnej platformie do nauki. Ćwicz gdziekolwiek i kiedykolwiek, całkowicie za darmo."
+        />
+        <meta name="twitter:image" content="https://learnet.pl/og-image.png" />
+
+        {/* <!-- Meta Tags Generated via https://www.opengraph.xyz --> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
