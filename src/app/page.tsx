@@ -102,7 +102,7 @@ export default function Home() {
                     <div className="mt-4">
                       <Link href={getLinkHref("buttonStart")}>
                         <Button className="bg-white text-sky-500 hover:bg-sky-50">
-                          Rozpocznij za darmo
+                          Wypróbuj zestaw darmowych ćwiczeń już teraz
                         </Button>
                       </Link>
                     </div>
@@ -297,9 +297,11 @@ export default function Home() {
                   <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     Rozpocznij swoją przygodę z nauką języka angielskiego dzięki
                     naszym interaktywnym ćwiczeniom i spersonalizowanemu
-                    doświadczeniu. Bądź jednym z pierwszych, którzy skorzystają
-                    z tej innowacyjnej metody nauki. I pamiętaj - to całkowicie
-                    za darmo!
+                    doświadczeniu. Skup się na 3000 najpopularniejszych słów,
+                    które stanowią fundament płynnej komunikacji. Bądź jednym z
+                    pierwszych, którzy skorzystają z tej innowacyjnej metody
+                    nauki, łączącej efektywność z praktycznością. I pamiętaj -
+                    to całkowicie za darmo!
                   </p>
                   <div className="w-full max-w-sm space-y-2">
                     <Link href={getLinkHref("buttonEnd")}>
