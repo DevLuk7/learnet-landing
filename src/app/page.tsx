@@ -83,29 +83,42 @@ export default function Home() {
         <main className="flex-1">
           <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-sky-500 text-white">
             <div className="container px-4 md:px-6 mx-auto">
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <AnimatedSection>
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                    Opanuj angielski z interaktywnymi ćwiczeniami
-                  </h1>
-                </AnimatedSection>
-                <AnimatedSection>
-                  <p className="mx-auto max-w-[700px] text-sky-100 md:text-xl">
-                    Popraw swoje umiejętności językowe dzięki naszej
-                    innowacyjnej platformie do nauki. Ucz się angielskiego
-                    poprzez słownictwo, które napotykasz codziennie, dodając
-                    frazy za pomocą naszej wtyczki Chrome.
-                  </p>
-                </AnimatedSection>
-                <AnimatedSection>
-                  <div className="space-x-4">
-                    <Link href={getLinkHref("buttonStart")}>
-                      <Button className="bg-white text-sky-500 hover:bg-sky-50">
-                        Rozpocznij za darmo
-                      </Button>
-                    </Link>
-                  </div>
-                </AnimatedSection>
+              <div className="flex flex-row items-center justify-between flex-wrap md:flex-nowrap gap-10 md:gap-4">
+                <div className="flex flex-col items-start space-y-4 text-left max-w-full md:max-w-[50%]">
+                  <AnimatedSection>
+                    <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                      Opanuj angielski z interaktywnymi ćwiczeniami
+                    </h1>
+                  </AnimatedSection>
+                  <AnimatedSection>
+                    <p className="text-sky-100 md:text-xl">
+                      Popraw swoje umiejętności językowe dzięki naszej
+                      innowacyjnej platformie do nauki. Ucz się angielskiego
+                      poprzez słownictwo, które napotykasz codziennie, dodając
+                      frazy za pomocą naszej wtyczki Chrome.
+                    </p>
+                  </AnimatedSection>
+                  <AnimatedSection>
+                    <div className="mt-4">
+                      <Link href={getLinkHref("buttonStart")}>
+                        <Button className="bg-white text-sky-500 hover:bg-sky-50">
+                          Rozpocznij za darmo
+                        </Button>
+                      </Link>
+                    </div>
+                  </AnimatedSection>
+                </div>
+                <div className="">
+                  <AnimatedSection>
+                    <Image
+                      src="/devices.png"
+                      alt="Devices showing Learnet app"
+                      width={666}
+                      height={374}
+                      className="object-contain"
+                    />
+                  </AnimatedSection>
+                </div>
               </div>
             </div>
           </section>
@@ -175,12 +188,13 @@ export default function Home() {
             <div className="container px-4 md:px-6 mx-auto">
               <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
                 <AnimatedSection>
-                  <img
-                    alt="Rozszerzenie Chrome"
+                  <Image
+                    src="/chrome-extension.gif"
+                    blurDataURL="/devices.png"
+                    alt="Logo"
+                    width={600}
+                    height={388}
                     className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-                    height="310"
-                    src="/placeholder.svg?height=310&width=550"
-                    width="550"
                   />
                 </AnimatedSection>
                 <div className="flex flex-col justify-center space-y-4">
