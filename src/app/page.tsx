@@ -87,15 +87,15 @@ export default function Home() {
                 <div className="flex flex-col items-start space-y-4 text-left max-w-full md:max-w-[50%]">
                   <AnimatedSection>
                     <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                      Opanuj angielski z interaktywnymi ćwiczeniami
+                      Ucz się angielskiego ze słów napotkanych w internecie
                     </h1>
                   </AnimatedSection>
                   <AnimatedSection>
                     <p className="text-sky-100 md:text-xl">
-                      Popraw swoje umiejętności językowe dzięki naszej
-                      innowacyjnej platformie do nauki. Ucz się angielskiego
-                      poprzez słownictwo, które napotykasz codziennie, dodając
-                      frazy za pomocą naszej wtyczki Chrome.
+                      Nasza innowacyjna platforma do nauki języka umożliwia
+                      doskonalenie umiejętności dzięki personalizowanym
+                      ćwiczeniom, gdziekolwiek i kiedykolwiek – całkowicie za
+                      darmo.
                     </p>
                   </AnimatedSection>
                   <AnimatedSection>
